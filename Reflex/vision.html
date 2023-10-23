@@ -44,19 +44,11 @@
           <li><a class="nav-link scrollto" href="#about">Hakkında</a></li>
           <li class="dropdown"><a href="#"><span>Hizmetler</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="sysRequirement.html">Sistem Gereksinimleri</a></li>
+              <li><a href="faq.html">Sıkça Sorulan Sorular</a></li>
+              <li><a href="technology.html">Kullandığımız Teknolojiler</a></li>
+              <li><a href="factor.html">2 Faktörlü Doğrulama</a></li>
+              <li><a href="ransom.html">Fidye Yazılımı</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">İletişim</a></li>
@@ -69,29 +61,100 @@
 
   <main id="main">
 
-
-    <section id="breadcrumbs" class="breadcrumbs">
-      <div class="container">
-
-        <ol>
-          <li><a href="index.html">Anasayfa</a></li>
-          <li>Inner Page</li>
-        </ol>
-        <h2>Inner Page</h2>
-
+    <div class="visionMision row d-flex align-items-center justify-content-center">
+      <div class="row col-md-12 d-flex align-items-center justify-content-center py-5">
+          <div class="col-md-4 py-5 animated" data-scroll="trigger">
+              <h3 class="vmHead">Vizyonumuz</h3>
+              <p class="text-muted vmText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem incidunt a corporis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem incidunt a corporis.</p>
+          </div>
+          <div class="col-md-3 py-4 animated" data-scroll="trigger">
+              <img src="./assets/img/vision.jpg" width="400px" alt="">
+          </div>
       </div>
-    </section>
-
-    <section class="inner-page">
-      <div class="container">
-        <p>
-          Example inner page template
-        </p>
+      <div class="row col-md-12 d-flex align-items-center justify-content-center py-5">
+          <div class="col-md-3 py-4 animated" data-scroll="trigger">
+              <img src="./assets/img/mision.jpg" width="400px" alt="">
+          </div>
+          <div class="col-md-4 py-4 animated" data-scroll="trigger">
+              <h3 class="vmHead">Misyonumuz</h3>
+              <p class="text-muted vmText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem incidunt a corporis.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem incidunt a corporis.</p>
+          </div>
       </div>
-    </section>
+  </div>
 
   </main><!-- End #main -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
 
+      <div class="section-title">
+        <h2>İletişim</h2>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Konum:</h4>
+              <p>Hatay/Dörtyol</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Telefon:</h4>
+              <p>+90 505 135 4102</p>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51093.84812824614!2d36.18191792226492!3d36.833721442531974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f3f078f32e5fd%3A0xf6413fee371d9a26!2zRMO2cnR5b2wsIEhhdGF5!5e0!3m2!1str!2str!4v1697099161769!5m2!1str!2str"
+              width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="name">İsim</label>
+                <input type="text" name="name" class="form-control" id="name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Email</label>
+                <input type="email" class="form-control" name="email" id="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Konu</label>
+              <input type="text" class="form-control" name="subject" id="subject" required>
+            </div>
+            <div class="form-group">
+              <label for="name">Mesaj</label>
+              <textarea class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">
+                Mesajınız gönderildi. Teşekkür ederim!</div>
+            </div>
+            <div class="text-center"><button type="submit">Mesaj Gönder</button></div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
   <!-- ======= Footer ======= -->
   <footer id="footer">
 

@@ -272,3 +272,21 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+
+
+window.addEventListener('load', scrollEvent);
+window.addEventListener('scroll', scrollEvent);
+
+
+function scrollEvent() {
+    const elements = document.querySelectorAll('[data-scroll="trigger"]');
+    
+    elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight / 1) {
+            element.classList.add('visible');
+        }
+    });
+}
