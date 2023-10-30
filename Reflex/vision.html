@@ -40,18 +40,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Anasayfa</a></li>
-          <li><a class="nav-link scrollto" href="#about">Hakkında</a></li>
-          <li class="dropdown"><a href="#"><span>Hizmetler</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link" href="index.html">Anasayfa</a></li>
+          <li><a class="nav-link" href="about.html">Hakkımızda</a></li>
+          <li class="dropdown"><a href="" class="active"><span>Kaynaklar</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="sysRequirement.html">Sistem Gereksinimleri</a></li>
-              <li><a href="faq.html">Sıkça Sorulan Sorular</a></li>
-              <li><a href="technology.html">Kullandığımız Teknolojiler</a></li>
-              <li><a href="factor.html">2 Faktörlü Doğrulama</a></li>
-              <li><a href="ransom.html">Fidye Yazılımı</a></li>
-            </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">İletişim</a></li>
+          <li><a href="vision.html">Vizyon - Misyon</a></li>
+          <li><a href="sysRequirement.html">Sistem Gereksinimleri</a></li>
+          <li><a href="faq.html">Sıkça Sorulan Sorular</a></li>
+          <li><a href="factor.html">2 Faktörlü Doğrulama</a></li>
+          <li><a href="ransom.html">Fidye Yazılımı</a></li>
+        </ul>
+        <li><a class="nav-link" href="contact.html">İletişim</a></li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -59,7 +60,7 @@
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main" class="container-fluid">
 
     <div class="visionMision row d-flex align-items-center justify-content-center">
       <div class="row col-md-12 d-flex align-items-center justify-content-center py-5">
@@ -82,7 +83,7 @@
       </div>
   </div>
 
-  </main><!-- End #main -->
+  </main>
   <section id="contact" class="contact">
     <div class="container" data-aos="fade-up">
 
@@ -112,11 +113,12 @@
               <h4>Telefon:</h4>
               <p>+90 505 135 4102</p>
             </div>
-
-            <iframe
+            <div>
+              <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51093.84812824614!2d36.18191792226492!3d36.833721442531974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x152f3f078f32e5fd%3A0xf6413fee371d9a26!2zRMO2cnR5b2wsIEhhdGF5!5e0!3m2!1str!2str!4v1697099161769!5m2!1str!2str"
-              width="470" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              width="450px" height="350px" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
           </div>
 
         </div>
@@ -174,11 +176,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Linkler</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Anasayfa</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Hakkında</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Hizmetler</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-            </ul>
+              <li><i class="bx bx-chevron-right"></i><a href="index.html">Anasayfa</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="about.html">Hakkında</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="#main">Kaynaklar</a></li>
+              <li><i class="bx bx-chevron-right"></i><a href="contact.html">İletişim</a></li>
+          </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -195,11 +197,8 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Sosyal Medyada Biz</h4>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
             </div>
           </div>
 
@@ -216,8 +215,6 @@
       </div>
     </div>
   </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
