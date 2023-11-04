@@ -1942,6 +1942,85 @@ section {
   margin-bottom: 15px;
 }
 
+
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Tablet ekran boyutları için stil */
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+  }
+}
+
+/* Mobil ekran boyutları için stil */
+@media (max-width: 576px) {
+  .card {
+      width: 100%;
+      padding: 10px;
+  }
+  .card-content {
+      padding: 10px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+  p {
+      font-size: 14px;
+  }
+}
+
+
+
+
 .solution_card .solu_description button {
   border: 0;
   border-radius: 15px;
@@ -1957,11 +2036,6 @@ section {
   padding: 5px 16px;
 }
 
-.our_solution_content h1 {
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-}
 
 
 .hover_color_bubble {
@@ -2032,6 +2106,10 @@ section {
   }
 }
 
+.card-image:hover img {
+  transform: scale(1.2); /* Resmi 1.2 kat büyüt */
+  transition: transform .7s ease; /* Geçiş efekti ekleyin (isteğe bağlı) */
+}
 
 
 /* 
